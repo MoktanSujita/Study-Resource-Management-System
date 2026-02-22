@@ -23,8 +23,8 @@ if($_SERVER['REQUEST_METHOD'] == "POST"){
         ");
         $stmt->execute([$response_text, $feedback_id]);
 
-        header("Location: ../templates/admin-feedbacks.html");
-        exit;
+        header("Location:admin-dashboard.php");
+        exit();
 
     } catch(PDOException $e){
         die("Database Error: " . $e->getMessage());

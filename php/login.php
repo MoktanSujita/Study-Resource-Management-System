@@ -105,6 +105,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
               <label class="form-label">Password</label>
               <input type="password" name="password" class="form-control mb-3" placeholder="Password" required autocomplete="new-password">
 
+              <p class="text-center mt-3">
+                Don't have an account? <a href="../templates/register.html">Register</a>
+            </p>
               <button type="submit" class="btn btn-primary w-100 py-2 fs-5">Login</button>
           </form>
 
