@@ -69,7 +69,7 @@ include 'auth.php';
 <nav class="navbar navbar-custom">
     <span class="navbar-brand">Admin Dashboard</span>
     <span class="navbar-text">
-        <a href="../php/logout.php" class="text-white">Logout</a>   
+        <a href="../php/logout.php" class="text-white text-decoration-none">Logout</a>   
     </span>
 </nav>
 
@@ -84,7 +84,7 @@ include 'auth.php';
             <div class="admin-card">
                 <i class="bi bi-upload"></i>
                 <h5 class="mb-2">Upload Study Materials</h5>
-                <a href="../templates/upload.html">Go to Section →</a>
+                <a href="upload.php">Go to Section →</a>
             </div>
         </div>
 

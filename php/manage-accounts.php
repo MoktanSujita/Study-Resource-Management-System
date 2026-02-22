@@ -25,7 +25,7 @@ $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 <div class="page-wrapper">
     <div class="container pt-0">
         <h2 class="mt-0 pt-4">Manage Users</h2>
-        <a href="../templates/register.html" class="btn btn-success mb-3">Add New User</a>
+        <a href="../templates/add-user.html" class="btn btn-success mb-3">Add New User</a>
         
         <table class="table table-bordered table-striped">
             <thead>

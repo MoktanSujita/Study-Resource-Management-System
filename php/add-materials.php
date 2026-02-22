@@ -1,4 +1,5 @@
 <?php
+session_start()
 include_once 'config.php';
 require 'auth.php'; // includes session + config
 
@@ -62,7 +63,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['upload'])) {
             ':path'  => $targetFilePath,
             ':uid'   => $user_id
         ]);
-
+        $_SESSION['success'] = "Material uploaded successfully!";
         header("Location: ../templates/upload.html?msg=success");
         exit;
 

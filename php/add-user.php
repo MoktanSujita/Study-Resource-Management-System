@@ -6,7 +6,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
   $name = trim($_POST['fullname']);
   $email = trim($_POST['email']);
   $password = password_hash($_POST['password'], PASSWORD_DEFAULT);
-  $role = "student"; // Default role for self-registration
+  $role = trim($_POST['role']);
 
   try {
          //Inserting to user data to database table
@@ -20,7 +20,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
          ]);
 
          $_SESSION['registered'] = true;
-         header("Location:login.php");
+         header("Location:manage-accounts.php");
          exit();
         } 
         catch(PDOException $e)

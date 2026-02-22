@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Study Resources Management System</title>
+  <title>Study Resource Management System</title>
  <link rel="icon" type="image/png" href="favicon.png">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -29,7 +29,7 @@
 
 <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
   <div class="container">
-    <a class="navbar-brand" href="#">Study Resources Management System</a>
+    <a class="navbar-brand" href="#">Study Resource Management System</a>
     <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
       <span class="navbar-toggler-icon"></span>
     </button>

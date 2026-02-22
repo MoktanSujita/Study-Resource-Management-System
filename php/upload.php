@@ -1,3 +1,13 @@
+<?php
+session_start();
+if (isset($_SESSION['success'])) {
+    echo '<div class="alert alert-success alert-dismissible fade show" role="alert">
+            '.$_SESSION['success'].'
+            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+          </div>';
+    unset($_SESSION['success']);
+}
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -31,13 +41,6 @@
 
       <div class="card upload-card p-4">
         <h4 class="text-center mb-4 fw-bold">📤 Upload New Material</h4>
-
-                   <?php if (isset($_GET['msg']) && $_GET['msg'] === 'success'): ?>
-                      <div class="alert alert-success alert-dismissible fade show" role="alert">
-                           Material uploaded successfully!
-                          <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
-                         </div>
-                    <?php endif; ?>
 
         <form action="../php/add-materials.php" method="POST" enctype="multipart/form-data">
 
