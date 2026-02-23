@@ -34,4 +34,4 @@ A centralized platform designed to help students and educators organize, upload,
 ### Installation
 1. **Clone the repository:**  
    ```bash
-   git clone https://github.com/your-username/study-resource-system.git
+   git clone (https://github.com/MoktanSujita/Study-Resource-Management-System.git)
